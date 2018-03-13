@@ -1,0 +1,2 @@
+c:\users\flor villalpando\documents\visual studio 2015\Projects\practica_conexion\practica_conexion\bin\Debug\practica_conexion.exe.config
+C:\Users\Flor Villalpando\Desktop\INTEGRADORA\proyecto\practica_conexion\bin\Debug\practica_conexion.exe.config
