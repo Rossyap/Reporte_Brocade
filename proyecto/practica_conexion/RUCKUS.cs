@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace practica_conexion
 {
@@ -24,11 +25,16 @@ namespace practica_conexion
 
         private void button3_Click(object sender, EventArgs e)
         {
+            MySqlConnection coneccion = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username = root; password=; database = ruckus");
+            coneccion.Open();
+
             this.Hide();
 
             RUCKUS_1 frm = new RUCKUS_1();
-
+                       
             frm.Show();
+            this.Hide();
+                                 
         }
 
         private void RUCKUS_Load(object sender, EventArgs e)

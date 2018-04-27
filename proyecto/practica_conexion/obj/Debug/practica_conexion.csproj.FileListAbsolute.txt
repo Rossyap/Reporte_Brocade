@@ -1,2 +1,15 @@
 c:\users\flor villalpando\documents\visual studio 2015\Projects\practica_conexion\practica_conexion\bin\Debug\practica_conexion.exe.config
 C:\Users\Flor Villalpando\Desktop\INTEGRADORA\proyecto\practica_conexion\bin\Debug\practica_conexion.exe.config
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\bin\Debug\practica_conexion.exe.config
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\bin\Debug\practica_conexion.exe
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\bin\Debug\practica_conexion.pdb
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\bin\Debug\MySql.Data.dll
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\bin\Debug\MySql.Data.xml
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.login.resources
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.Properties.Resources.resources
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.RUCKUS.resources
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.RUCKUS_1.resources
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.csproj.GenerateResource.Cache
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.exe
+C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.pdb
