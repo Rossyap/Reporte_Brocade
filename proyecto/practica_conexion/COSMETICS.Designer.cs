@@ -131,6 +131,7 @@
             // 
             // UPDATE
             // 
+            this.UPDATE.AutoSize = true;
             this.UPDATE.BackColor = System.Drawing.Color.LightSlateGray;
             this.UPDATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UPDATE.ForeColor = System.Drawing.Color.MediumBlue;
@@ -139,7 +140,7 @@
             this.UPDATE.Location = new System.Drawing.Point(315, 380);
             this.UPDATE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UPDATE.Name = "UPDATE";
-            this.UPDATE.Size = new System.Drawing.Size(204, 44);
+            this.UPDATE.Size = new System.Drawing.Size(204, 46);
             this.UPDATE.TabIndex = 30;
             this.UPDATE.Text = "UPDATE";
             this.UPDATE.UseVisualStyleBackColor = false;
@@ -147,6 +148,7 @@
             // 
             // SAVE
             // 
+            this.SAVE.AutoSize = true;
             this.SAVE.BackColor = System.Drawing.Color.LightSlateGray;
             this.SAVE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SAVE.ForeColor = System.Drawing.Color.MediumBlue;
@@ -155,7 +157,7 @@
             this.SAVE.Location = new System.Drawing.Point(645, 380);
             this.SAVE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SAVE.Name = "SAVE";
-            this.SAVE.Size = new System.Drawing.Size(204, 44);
+            this.SAVE.Size = new System.Drawing.Size(204, 46);
             this.SAVE.TabIndex = 29;
             this.SAVE.Text = "SAVE";
             this.SAVE.UseVisualStyleBackColor = false;
@@ -165,6 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1113, 699);

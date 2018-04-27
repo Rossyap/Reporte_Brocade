@@ -57,11 +57,13 @@
             this.label1.Size = new System.Drawing.Size(347, 69);
             this.label1.TabIndex = 1;
             this.label1.Text = "WELCOME";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // hora
             // 
             this.hora.AutoSize = true;
             this.hora.Font = new System.Drawing.Font("Consolas", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.hora.Location = new System.Drawing.Point(905, 579);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(195, 70);
@@ -72,9 +74,10 @@
             // 
             this.fecha.AutoSize = true;
             this.fecha.Font = new System.Drawing.Font("Corbel", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.fecha.Location = new System.Drawing.Point(973, 649);
             this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(86, 41);
+            this.fecha.Size = new System.Drawing.Size(82, 40);
             this.fecha.TabIndex = 3;
             this.fecha.Text = "hora";
             // 
@@ -87,6 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1112, 699);
             this.Controls.Add(this.fecha);

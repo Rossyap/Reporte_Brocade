@@ -13,8 +13,6 @@ C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\pract
 C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.csproj.GenerateResource.Cache
 C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.exe
 C:\Users\Eric\Desktop\Reporte Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.pdb
-<<<<<<< HEAD
-=======
 C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\bin\Debug\practica_conexion.exe.config
 C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.exe
 C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.pdb
@@ -35,4 +33,24 @@ C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\bin
 C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\bin\Debug\RUCKUS.Designer.cs
 C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.Inicio.resources
 C:\Users\Flor Villalpando\Desktop\Reporte_Brocade\proyecto\practica_conexion\obj\Debug\practica_conexion.SEARCH.resources
->>>>>>> 6630794f459b478f38789656cfcb1e6ec44dedf4
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\practica_conexion.exe.config
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.exe
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.pdb
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.COSMETICS.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.login.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.Usuarios.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.Inicio.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.INSPECTION.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.Properties.Resources.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.RUCKUS.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.RUCKUS_1.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.SEARCH.resources
+C:\Users\Eric\Desktop\proyecto\practica_conexion\obj\Debug\practica_conexion.csproj.GenerateResource.Cache
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\RUCKUS.resx
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\RUCKUS.cs
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\RUCKUS.Designer.cs
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\practica_conexion.exe
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\practica_conexion.pdb
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\MySql.Data.dll
+C:\Users\Eric\Desktop\proyecto\practica_conexion\bin\Debug\MySql.Data.xml

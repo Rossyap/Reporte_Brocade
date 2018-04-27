@@ -8,10 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-<<<<<<< HEAD
-=======
+using MySql.Data;
 using System.Runtime.InteropServices;
->>>>>>> 6630794f459b478f38789656cfcb1e6ec44dedf4
 
 namespace practica_conexion
 {
@@ -30,18 +28,6 @@ namespace practica_conexion
 
         private void maximizar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            MySqlConnection coneccion = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username = root; password=; database = ruckus");
-            coneccion.Open();
-
-            this.Hide();
-
-            RUCKUS_1 frm = new RUCKUS_1();
-                       
-            frm.Show();
-            this.Hide();
-                                 
-=======
             this.WindowState = FormWindowState.Maximized;
             maximizar.Visible = false;
            restaurar.Visible = true;
@@ -58,7 +44,6 @@ namespace practica_conexion
             this.WindowState = FormWindowState.Normal;
             maximizar.Visible = true;
             restaurar.Visible = false;
->>>>>>> 6630794f459b478f38789656cfcb1e6ec44dedf4
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -118,9 +103,21 @@ namespace practica_conexion
 
         }
 
-        private void RUCKUS_Load(object sender, EventArgs e)
+        
+        private void MENU_Paint(object sender, PaintEventArgs e)
         {
-            pictureBox1_Click(null, e);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Usuarios());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+
         }
     }
 }

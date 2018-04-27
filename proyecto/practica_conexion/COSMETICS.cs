@@ -65,7 +65,7 @@ namespace practica_conexion
             MySqlCommand logg = new MySqlCommand();
             MySqlConnection conecta = new MySqlConnection();
             logg.Connection = conectar;
-            logg.CommandText = ("update cosmetics set sn_chocolate=" + chocolate.Text + ", top_cover='" + top_cover.Text + "', botton_cover='" + botton_cover.Text + "', mayla='" + mayla.Text + "', agency='" + agency_label.Text +  "'where sn_chocolate=" + chocolate.Text);
+            logg.CommandText = ("update cosmetics set SN_Chocolate=" + chocolate.Text + ", Top_Cover='" + top_cover.Text + "', Bottn_Chasis='" + botton_cover.Text + "', Mayla_New='" + mayla.Text + "', Etiq_Age_New='" + agency_label.Text +  "'where SN_Chocolate=" + chocolate.Text);
             MySqlDataReader leer = logg.ExecuteReader();
             if (leer.Read())
             {

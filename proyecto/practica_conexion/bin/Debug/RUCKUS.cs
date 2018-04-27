@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MySql.Data;
 using System.Runtime.InteropServices;
 
 namespace practica_conexion
@@ -102,9 +103,21 @@ namespace practica_conexion
 
         }
 
-        private void RUCKUS_Load(object sender, EventArgs e)
+        
+        private void MENU_Paint(object sender, PaintEventArgs e)
         {
-            pictureBox1_Click(null, e);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Usuarios());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+
         }
     }
 }

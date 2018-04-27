@@ -664,6 +664,16 @@ namespace practica_conexion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap USUARIO_opt {
+            get {
+                object obj = ResourceManager.GetObject("USUARIO_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ver_icono_5784_128_opt {
             get {
                 object obj = ResourceManager.GetObject("ver-icono-5784-128_opt", resourceCulture);

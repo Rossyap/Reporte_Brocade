@@ -19,20 +19,6 @@ namespace practica_conexion
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -43,40 +29,27 @@ namespace practica_conexion
             MySqlConnection conectar = new MySqlConnection();
             id.Connection = coneccion;
 
-<<<<<<< HEAD
-            id.CommandText = ("select * from usuarios where  no_reloj = '" + textBox1.Text + "' and password = '" + textBox2.Text + "' ");
+            id.CommandText = ("select * from usuarios where tipo = '" + cmbtipo.Text + "'and no_reloj = '" + user.Text + "' and password = '" + password.Text + "' ");
 
             MySqlDataReader leer = id.ExecuteReader();
 
             if (leer.Read())
             {
-                
-                
-                    MessageBox.Show("Bienvenido");
-                    RUCKUS llamar = new RUCKUS();
+                if (cmbtipo.Text == "Admin")
+                {
+                    MessageBox.Show("Welcome");
+                    Usuarios llamar = new Usuarios();
                     llamar.Show();
                     this.Hide();
-                                
-            }
-            else
-            {
-                MessageBox.Show("Usuario o Contraseña incorrecta");
-                coneccion.Close();
-            }
+                }
+                else if (cmbtipo.Text == "Users")
+                {
+                    MessageBox.Show("Welcome");
+                    RUCKUS llamar1 = new RUCKUS();
+                    llamar1.Show();
+                    this.Hide();
+                }
 
-
-            coneccion.Close();
-=======
-            id.CommandText = ("select * from usuarios where  no_reloj = '" + user.Text + "' and password = '" + password.Text + "' ");
-
-            MySqlDataReader leer = id.ExecuteReader();
->>>>>>> 6630794f459b478f38789656cfcb1e6ec44dedf4
-
-            if (leer.Read())
-            {
-                RUCKUS llamar = new RUCKUS();
-                llamar.Show();
-                this.Hide();
 
             }
             else
@@ -103,5 +76,7 @@ namespace practica_conexion
         {
             password.PasswordChar = '*';
         }
+
+        
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using practica_conexion.Resources;
 
 namespace practica_conexion
 {
@@ -18,85 +19,88 @@ namespace practica_conexion
         {
             InitializeComponent();
         }
+        coneccion fn = new coneccion();
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+
         {
+            bool conectado = fn.Conectar();
+
+            if (conectado)
+            {
+                MessageBox.Show("Conectado");
+            }
+            else
+            {
+                MessageBox.Show("Error de conexion");
+            }
+
+        }
+        private void btnvisualizar_Click_1(object sender, EventArgs e)
+        {
+           
 
         }
 
-        private void label13_Click(object sender, EventArgs e)
+       
+        private void SAVE_Click(object sender, EventArgs e)
         {
+            string agregar = "insert into inspection values ('" + choco.Text + "', '" + snvai.Text + "', '" + sku.Text + "' , '" + mac.Text + "', '"+country.Text+"', '"+rj45.Text+"', '"+sfp.Text+"', '"+cover.Text+"', '"+chasis.Text+"', '"+mayla.Text+"', '"+agency.Text+"', '"+staing.Text+"', '"+fecha.Text+"', '"+inspector.Text+"')";
 
+            if (fn.Insertar(agregar))
+            {
+                MessageBox.Show("Agregado");
+                Visualizar();
+            }
+            else
+            {
+                MessageBox.Show("Error al agregar");
+            }
+
+        
         }
 
         private void UPDATE_Click(object sender, EventArgs e)
         {
-            MySqlConnection conectar = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=minisise;");
-            conectar.Open();
-            MySqlCommand logg = new MySqlCommand();
-            MySqlConnection conecta = new MySqlConnection();
-            logg.Connection = conectar;
-            logg.CommandText = ("update repair set sn_chocolate=" + choco.Text + ", sn_vainilla='" + snvai.Text + "', SKU='" + sku.Text + "', MAC='" + mac.Text + "', country='" + country.Text + "', rj45='" + rj45.Text + "', sfp='" + sfp.Text + "', cover='" + cover.Text + "', chasis='" + chasis.Text + "', mayla='" + mayla.Text + "', agency='" + agency.Text + "', staing='" + staing.Text + "', inspector='" + inspector.Text + "'where sn_chocolate=" + choco.Text);
-            MySqlDataReader leer = logg.ExecuteReader();
-            if (leer.Read())
+            string actualizar = "update inspection set  SN_Vainilla =  '" + snvai.Text + "', SKU = '" + sku.Text + "', Mac = '" + mac.Text + "', Pais = '"+country.Text+"', RJ45= '"+rj45.Text+"', SFP='"+sfp.Text+"', Cover= '"+cover.Text+"', Chasis='"+chasis.Text+"', Maylar='"+mayla.Text+"', Etiq_Age= '"+agency.Text+"', Stagin_Inicial= '"+staing.Text+"', inspector='"+inspector.Text+"' where SN_Chocolate = '" + choco.Text + "'";
+
+
+            if (fn.Actualizar(actualizar))
             {
-                MessageBox.Show("Error en los Datos favor de Revisarlo");
+                MessageBox.Show("Registro actualizado");
+
+                Visualizar();
             }
             else
             {
-                MessageBox.Show("Registro Agregado!");
-                choco.Text = " ";
-                snvai.Text = " ";
-                sku.Text = " ";
-                mac.Text = " ";
-                country.Text = " ";
-                rj45.Text = " ";
-                sfp.Text = " ";
-                cover.Text = " ";
-                chasis.Text = " ";
-                mayla.Text = " ";
-                agency.Text = " ";
-                staing.Text = " ";
-                inspector.Text = " ";
+                MessageBox.Show("Error al actualizar");
             }
-            conectar.Close();
+
+
         }
 
-        private void SAVE_Click(object sender, EventArgs e)
+        private void btnvisualizar_Click(object sender, EventArgs e)
         {
+            Visualizar();
+        }
 
-            MySqlConnection conectar = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=minisise;");
-            conectar.Open();
-            MySqlCommand logg = new MySqlCommand();
-            MySqlConnection conecta = new MySqlConnection();
-            logg.Connection = conectar;
-            logg.CommandText = ("insert into inspection values('" + choco.Text + "','" + snvai.Text + "','" + sku.Text + "','" + mac.Text + "','" + country.Text + "','" + rj45.Text + "','" + sfp.Text + "','" + cover.Text + "','" + chasis.Text + "','" + mayla.Text + "','" + agency.Text + "','" + staing.Text + "','" + inspector.Text + "')");
-            MySqlDataReader leer = logg.ExecuteReader();
-            if (leer.Read())
-            {
-                MessageBox.Show("Data incorrect");
+        public void Visualizar()
+        {
+            string connectionString = "datasource = 127.0.0.1; port = 3306; username = root; password=; database = ruckus;";
+            string query = "SELECT * FROM inspection";
 
 
-            }
-            else
-            {
-                MessageBox.Show("Saved Record");
-                choco.Text = " ";
-                snvai.Text = " ";
-                sku.Text = " ";
-                mac.Text = " ";
-                country.Text = " ";
-                rj45.Text = " ";
-                sfp.Text = " ";
-                cover.Text = " ";
-                chasis.Text = " ";
-                mayla.Text = " ";
-                agency.Text = " ";
-                staing.Text = " ";
-                inspector.Text = " ";
+            MySqlConnection databaseConecction = new MySqlConnection(connectionString);
 
-            }
-            conectar.Close();
+            databaseConecction.Open();
+
+            DataTable inspec = new DataTable();
+            MySqlDataAdapter mdaDatos = new MySqlDataAdapter(query, databaseConecction);
+            mdaDatos.Fill(inspec);
+            dataGridView1.DataSource = inspec;
+            DataTable cuid = new DataTable();
+
+            databaseConecction.Close();
         }
     }
 }

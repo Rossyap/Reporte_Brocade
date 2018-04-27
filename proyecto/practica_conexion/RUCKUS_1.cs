@@ -41,7 +41,7 @@ namespace practica_conexion
             MySqlCommand logg = new MySqlCommand();
             MySqlConnection conecta = new MySqlConnection();
             logg.Connection = conectar;
-            logg.CommandText = ("insert into repair values('" + serial_number.Text + "','" + VAINILLA.Text + "','" + FALLA.Text + "','" + CAUSE.Text + "','" + ACTION.Text + "','" + LOCATION.Text + "','" + PART_NUMBER.Text + "','" + quantity.Text + "','" + TECH.Text + "')");
+            logg.CommandText = ("insert into repair values('" + FALLA.Text + "','" + CAUSE.Text + "','" + ACTION.Text + "','" + LOCATION.Text + "','" + PART_NUMBER.Text + "','" + quantity.Text + "','" + TECH.Text + "','" + VAINILLA.Text + "','" + serial_number.Text + "')");
             MySqlDataReader leer = logg.ExecuteReader();
             if (leer.Read())
             {
@@ -73,7 +73,7 @@ namespace practica_conexion
             MySqlCommand logg = new MySqlCommand();
             MySqlConnection conecta = new MySqlConnection();
             logg.Connection = conectar;
-            logg.CommandText = ("update repair set sn_chocolate=" + serial_number.Text + ", sn_vainilla='" + VAINILLA.Text + "', falla='" + FALLA.Text + "', root_cause='" + CAUSE.Text + "', action_repair='" + ACTION.Text + "', location='" + LOCATION.Text + "', part_number='" + PART_NUMBER.Text + "', quanty='" + quantity.Text + "', tech='" + TECH.Text + "'where sn_chocolate=" + serial_number.Text);
+            logg.CommandText = ("update repair set SN_Chocolate=" + serial_number.Text + ", SN_Vainilla='" + VAINILLA.Text + "', fail='" + FALLA.Text + "', Root_cause='" + CAUSE.Text + "', Repair_Action='" + ACTION.Text + "', Reference='" + LOCATION.Text + "', PartNum='" + PART_NUMBER.Text + "', Qty='" + quantity.Text + "', Tech='" + TECH.Text + "'where SN_Chocolate=" + serial_number.Text);
             MySqlDataReader leer = logg.ExecuteReader();
             if (leer.Read())
             {
