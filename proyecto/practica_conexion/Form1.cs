@@ -33,8 +33,7 @@ namespace practica_conexion
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             MySqlConnection coneccion = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username = root; password=; database = ruckus");
@@ -44,6 +43,7 @@ namespace practica_conexion
             MySqlConnection conectar = new MySqlConnection();
             id.Connection = coneccion;
 
+<<<<<<< HEAD
             id.CommandText = ("select * from usuarios where  no_reloj = '" + textBox1.Text + "' and password = '" + textBox2.Text + "' ");
 
             MySqlDataReader leer = id.ExecuteReader();
@@ -66,10 +66,42 @@ namespace practica_conexion
 
 
             coneccion.Close();
+=======
+            id.CommandText = ("select * from usuarios where  no_reloj = '" + user.Text + "' and password = '" + password.Text + "' ");
 
-            RUCKUS frm = new RUCKUS();
+            MySqlDataReader leer = id.ExecuteReader();
+>>>>>>> 6630794f459b478f38789656cfcb1e6ec44dedf4
 
-            frm.Show();
+            if (leer.Read())
+            {
+                RUCKUS llamar = new RUCKUS();
+                llamar.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("incorrect data, please check!");
+                coneccion.Close();
+            }
+
+
+            coneccion.Close();
+        }
+
+        private void CERRAR_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+            password.PasswordChar = '*';
         }
     }
 }

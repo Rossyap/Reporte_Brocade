@@ -47,20 +47,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COSMETICS.Designer.cs">
+      <DependentUpon>COSMETICS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INSPECTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSPECTION.Designer.cs">
+      <DependentUpon>INSPECTION.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\coneccion.cs" />
     <Compile Include="RUCKUS.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="RUCKUS.Designer.cs">
       <DependentUpon>RUCKUS.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="RUCKUS_1.cs">
       <SubType>Form</SubType>
@@ -68,8 +94,23 @@
     <Compile Include="RUCKUS_1.Designer.cs">
       <DependentUpon>RUCKUS_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEARCH.Designer.cs">
+      <DependentUpon>SEARCH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="COSMETICS.resx">
+      <DependentUpon>COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSPECTION.resx">
+      <DependentUpon>INSPECTION.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,9 +124,13 @@
     </Compile>
     <EmbeddedResource Include="RUCKUS.resx">
       <DependentUpon>RUCKUS.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="RUCKUS_1.resx">
       <DependentUpon>RUCKUS_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEARCH.resx">
+      <DependentUpon>SEARCH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -117,6 +162,174 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ruckus-logo-bwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btvolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruckus-wireless-banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foxconn_logo_678_678x452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI-Login-08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New-Sign-In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple-login-template_1017-6732.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sssecurity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-icon-blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_31331324_bqXgqwmlnnXaOeXwFv8CrO6oMHpAKPum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_58680703_CKcuA9l8JIQAVkjg8rBvitx0TJU6EB6G.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-blue-i8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-300x150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foxconn_logo_678_678x4521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inspection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COSMETICS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_kappfinder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_kfilereplace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-Engine-Optimization.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXIT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-27402_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_thewindow_theapplication_2872.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-white-metro-maximize-window-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restoration_window_3491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foxconn-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Foxconn_Logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serviceicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_action_configure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serviceicon_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inspection %281%29_opt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inspection-512_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inspection_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparenta_opt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar %281%29_opt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_download_manager_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_device_3floppy_mount_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reparacion-mantenimiento-de-computadoras-e-impresoras-714601-MPE20359834462_072015-F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver-icono-5784-128_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver-icono-5784-128_opt %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
